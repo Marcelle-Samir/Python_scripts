@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>814</width>
+    <height>439</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Simple Tool</string>
+  </property>
+  <widget class="QGroupBox" name="pin0_groupbox">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>10</y>
+     <width>441</width>
+     <height>211</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Pin Configuration</string>
+   </property>
+   <widget class="QGroupBox" name="outputinput_groupBox">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>120</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Mode</string>
+    </property>
+    <widget class="QRadioButton" name="output_radioButton">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>20</y>
+       <width>83</width>
+       <height>18</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Output</string>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="input_radioButton">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>50</y>
+       <width>83</width>
+       <height>18</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Input</string>
+     </property>
+     <property name="checked">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="opconfiguration_groupBox">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>20</y>
+      <width>120</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Output Configuration</string>
+    </property>
+    <widget class="QRadioButton" name="high_radiobutton">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>20</y>
+       <width>83</width>
+       <height>18</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>High</string>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="low_radioButton">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>50</y>
+       <width>83</width>
+       <height>18</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Low</string>
+     </property>
+     <property name="checked">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="ipconfiguration_groupBox">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>120</y>
+      <width>120</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Input Configuration</string>
+    </property>
+    <widget class="QRadioButton" name="pur_radioButton">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>83</width>
+       <height>18</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>PUR</string>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="highimpedance_radioButton">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>50</y>
+       <width>111</width>
+       <height>18</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>High Impedance</string>
+     </property>
+     <property name="checked">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QLineEdit" name="pinname_lineedit">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>140</y>
+      <width>113</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Enter Pin Name</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="defaultname_checkBox">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>170</y>
+      <width>121</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Use Default Name</string>
+    </property>
+    <property name="checked">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="PORT_comboBox">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>50</y>
+      <width>62</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>PORTA</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>PORTB</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>PORTC</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>PORTD</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QComboBox" name="PIN_comboBox">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>120</y>
+      <width>62</width>
+      <height>22</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>20</y>
+      <width>111</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Choose Port Number</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_2">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>80</y>
+      <width>111</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Choose Pin Number</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QLineEdit" name="path_lineEdit">
+   <property name="geometry">
+    <rect>
+     <x>500</x>
+     <y>60</y>
+     <width>281</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Enter Output Path</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="generate_pushButton">
+   <property name="geometry">
+    <rect>
+     <x>520</x>
+     <y>90</y>
+     <width>241</width>
+     <height>121</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Generate</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>output_radioButton</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>opconfiguration_groupBox</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>101</x>
+     <y>58</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>269</x>
+     <y>69</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>output_radioButton</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>ipconfiguration_groupBox</receiver>
+   <slot>setDisabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>101</x>
+     <y>58</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>269</x>
+     <y>169</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>input_radioButton</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>opconfiguration_groupBox</receiver>
+   <slot>setDisabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>101</x>
+     <y>88</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>269</x>
+     <y>69</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>input_radioButton</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>ipconfiguration_groupBox</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>101</x>
+     <y>88</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>269</x>
+     <y>169</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>defaultname_checkBox</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>pinname_lineedit</receiver>
+   <slot>setDisabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>100</x>
+     <y>188</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>96</x>
+     <y>159</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
